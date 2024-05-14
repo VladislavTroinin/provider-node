@@ -3,31 +3,22 @@ package org.vsu.provider.app.service;
 import lombok.AllArgsConstructor;
 import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Service;
-import org.vsu.provider.app.config.StorageConfig;
 import org.vsu.provider.app.provider.DistributorProvider;
-import org.vsu.provider.domain.model.block.BlockModel;
-import org.vsu.provider.domain.model.block.DataBlock;
-import org.vsu.provider.domain.model.block.StorageBlock;
 import org.vsu.provider.domain.model.file.FileModel;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 @Service
 
 @AllArgsConstructor
 public class FileService {
 
-//    private final StorageConfig storageConfig;
     private final DistributorProvider distributorProvider;
 
     public FileModel getFile(@NonNull String userId, @NonNull String fileName) {
-        int defaultDataBlockSize = distributorProvider.getDataBlockSize();
-
-        int blockIndex = 0;
-        List<byte[]> fileByteList = new ArrayList<>();
-
+//        int defaultDataBlockSize = distributorProvider.getDataBlockSize();
+//
+//        int blockIndex = 0;
+//        List<byte[]> fileByteList = new ArrayList<>();
+//
 //        do {
 //            StorageBlock storageBlock = distributorProvider.getStorageBlock(userId, fileName, blockIndex++);
 //            Integer dataBlockByteCount = storageBlock.infoBlock().byteCount();
@@ -58,6 +49,10 @@ public class FileService {
 //            BlockModel blockModel = new BlockModel(userId, fileName, i, actualBlockSize, blockBytes);
 //            distributorProvider.saveStorageBlock(blockModel);
 //        }
+    }
+
+    public void test() {
+        distributorProvider.test();
     }
 
 }

@@ -1,6 +1,7 @@
 package org.vsu.provider.infra.api.rest.controller;
 
 import lombok.AllArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.vsu.provider.app.service.FileService;
@@ -29,6 +30,13 @@ public class FileController {
         byte[] fileBytes = fileHelper.fetchFileBytes(file);
         fileService.saveFile(userId, fileName, fileBytes);
         return UnifiedResponse.ok();
+    }
+
+    @PostMapping("/test")
+    @ResponseStatus(HttpStatus.CREATED)
+    public void test() {
+        fileService.test();
+        int x = 1;
     }
 
 }
