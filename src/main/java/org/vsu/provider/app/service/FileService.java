@@ -28,17 +28,17 @@ public class FileService {
         int blockIndex = 0;
         List<byte[]> fileByteList = new ArrayList<>();
 
-        do {
-            StorageBlock storageBlock = distributorProvider.getStorageBlock(userId, fileName, blockIndex++);
-            Integer dataBlockByteCount = storageBlock.infoBlock().byteCount();
-            byte[] actualDataBytes = !isLastBlock
-                    ? storageBlock.dataBlock().bytes()
-                    : Arrays.copyOf(storageBlock.dataBlock().bytes(), storageBlock.infoBlock().byteCount());
-            int dataBlockSize = isLastBlock ? storageBlock.infoBlock().byteCount() : defaultDataBlockSize;
-
-            dataBlocks.add(storageBlock.dataBlock());
-
-        } while ();
+//        do {
+//            StorageBlock storageBlock = distributorProvider.getStorageBlock(userId, fileName, blockIndex++);
+//            Integer dataBlockByteCount = storageBlock.infoBlock().byteCount();
+//            byte[] actualDataBytes = !isLastBlock
+//                    ? storageBlock.dataBlock().bytes()
+//                    : Arrays.copyOf(storageBlock.dataBlock().bytes(), storageBlock.infoBlock().byteCount());
+//            int dataBlockSize = isLastBlock ? storageBlock.infoBlock().byteCount() : defaultDataBlockSize;
+//
+//            dataBlocks.add(storageBlock.dataBlock());
+//
+//        } while ();
 
         return null;
     }
