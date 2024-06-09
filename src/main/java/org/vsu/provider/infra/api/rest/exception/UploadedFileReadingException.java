@@ -1,4 +1,4 @@
-package org.vsu.provider.infra.api.exception;
+package org.vsu.provider.infra.api.rest.exception;
 
 public class UploadedFileReadingException extends RuntimeException {
 

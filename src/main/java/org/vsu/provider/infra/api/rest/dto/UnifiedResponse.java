@@ -1,11 +1,11 @@
-package org.vsu.provider.infra.api.dto;
+package org.vsu.provider.infra.api.rest.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import org.springframework.lang.NonNull;
-import org.vsu.provider.infra.api.enumeration.ResponseStatusCode;
+import org.vsu.provider.infra.api.rest.enumeration.ResponseStatusCode;
 
 import java.time.LocalDateTime;
 

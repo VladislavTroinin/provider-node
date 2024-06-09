@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.vsu.provider.app.service.FileService;
 import org.vsu.provider.domain.model.file.FileModel;
-import org.vsu.provider.infra.api.dto.UnifiedResponse;
+import org.vsu.provider.infra.api.rest.dto.UnifiedResponse;
 import org.vsu.provider.infra.api.rest.helper.FileHelper;
 
 @RestController

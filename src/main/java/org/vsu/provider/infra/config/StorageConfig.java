@@ -1,4 +1,4 @@
-package org.vsu.provider.infra.api.config;
+package org.vsu.provider.infra.config;
 
 import lombok.AccessLevel;
 import lombok.Data;

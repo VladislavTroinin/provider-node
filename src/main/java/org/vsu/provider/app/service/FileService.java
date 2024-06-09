@@ -7,13 +7,13 @@ import org.vsu.provider.app.provider.DistributorProvider;
 import org.vsu.provider.domain.model.file.FileModel;
 
 @Service
-
 @AllArgsConstructor
 public class FileService {
 
-    private final DistributorProvider distributorProvider;
+//    private final DistributorProvider distributorProvider;
 
     public FileModel getFile(@NonNull String userId, @NonNull String fileName) {
+
 //        int defaultDataBlockSize = distributorProvider.getDataBlockSize();
 //
 //        int blockIndex = 0;
@@ -35,6 +35,7 @@ public class FileService {
     }
 
     public void saveFile(@NonNull String userId, @NonNull String fileName, @NonNull byte[] fileBytes) {
+
 //        int fileSize = fileBytes.length;
 //        int storageBlockSize = storageConfig.getBlockSize();
 //        int blockCount = Math.ceilDiv(fileSize, storageBlockSize);
@@ -49,10 +50,7 @@ public class FileService {
 //            BlockModel blockModel = new BlockModel(userId, fileName, i, actualBlockSize, blockBytes);
 //            distributorProvider.saveStorageBlock(blockModel);
 //        }
-    }
 
-    public void test() {
-        distributorProvider.test();
     }
 
 }

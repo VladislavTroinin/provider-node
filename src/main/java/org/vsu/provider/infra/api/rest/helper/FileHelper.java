@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
 import org.vsu.provider.app.message.ExceptionMessages;
-import org.vsu.provider.infra.api.exception.UploadedFileReadingException;
+import org.vsu.provider.infra.api.rest.exception.UploadedFileReadingException;
 
 import java.io.IOException;
 import java.util.Objects;

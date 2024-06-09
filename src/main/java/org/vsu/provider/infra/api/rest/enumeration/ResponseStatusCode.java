@@ -1,4 +1,4 @@
-package org.vsu.provider.infra.api.enumeration;
+package org.vsu.provider.infra.api.rest.enumeration;
 
 import lombok.Getter;
 
