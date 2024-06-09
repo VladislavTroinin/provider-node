@@ -14,6 +14,4 @@ public interface DistributorProvider {
 
     void saveStorageBlock(@NonNull StorageBlock storageBlock);
 
-    void test();
-
 }

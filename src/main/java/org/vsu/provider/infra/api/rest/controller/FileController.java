@@ -32,11 +32,4 @@ public class FileController {
         return UnifiedResponse.ok();
     }
 
-    @PostMapping("/test")
-    @ResponseStatus(HttpStatus.CREATED)
-    public void test() {
-        fileService.test();
-        int x = 1;
-    }
-
 }
